@@ -28,7 +28,7 @@ pipeline{
     stage('Docker image build'){
       steps{
         echo 'Docker Image Building'
-        sh 'sudo docker build -t project1:1.0'
+        sh 'sudo docker build -t project1:1.0 .'
       }
     }
     stage('Docker containers creation'){
