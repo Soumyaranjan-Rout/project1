@@ -25,6 +25,12 @@ pipeline{
         sh 'mvn package'
       }
     }
+    stage('Docker install'){
+      steps{
+        echo 'Docker install'
+        sh 'sudo apt -y install docker.io'
+      }
+    }
     stage('Docker image build'){
       step{
         echo 'Docker Image Building'
