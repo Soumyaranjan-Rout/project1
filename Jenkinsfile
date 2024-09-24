@@ -34,7 +34,7 @@ pipeline{
     stage('Docker containers creation'){
       steps{
         echo 'Containers creating'
-        sh 'docker run -dt -p 9090:9090 --name Project1 project1:1.0'
+        sh 'docker run -dt -p 8081:8081 --name Project1 project1:1.0'
       }
     }
   }
